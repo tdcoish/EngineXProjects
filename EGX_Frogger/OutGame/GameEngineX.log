@@ -1,0 +1,22 @@
+﻿  Track.cpp
+  Sorting.cpp
+  Physics.cpp
+  Menus.cpp
+  Main.cpp
+  Levels.cpp
+  InputManager.cpp
+  GraphicsHelpers.cpp
+  Game.cpp
+  EventHandling.cpp
+  EntityFactory.cpp
+  Entity.cpp
+c:\programming\copied frogger\game\private\entity.cpp(121): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\programming\copied frogger\game\private\entity.cpp(146): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Collision.cpp
+  Generating Code...
+c:\programming\copied frogger\game\private\entityfactory.h(17): warning C4715: 'EntityFactory::CreateEntity': not all control paths return a value
+c:\programming\copied frogger\game\private\entityfactory.h(17): warning C4715: 'EntityFactory::CreateEntity': not all control paths return a value
+EngineXd.lib(Engine.obj) : warning LNK4099: PDB 'EngineX.pdb' was not found with 'EngineXd.lib(Engine.obj)' or at 'C:\Programming\Copied Frogger\Build\EngineX.pdb'; linking object as if no debug info
+EngineXd.lib(RenderPacket.obj) : warning LNK4099: PDB 'EngineX.pdb' was not found with 'EngineXd.lib(RenderPacket.obj)' or at 'C:\Programming\Copied Frogger\Build\EngineX.pdb'; linking object as if no debug info
+EngineXd.lib(System.obj) : warning LNK4099: PDB 'EngineX.pdb' was not found with 'EngineXd.lib(System.obj)' or at 'C:\Programming\Copied Frogger\Build\EngineX.pdb'; linking object as if no debug info
+  GameEngineX.vcxproj -> C:\Programming\Copied Frogger\Build\GameEngineXd.exe

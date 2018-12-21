@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{ccdbdf11-c381-4f92-bf67-ba05fce45ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Public">
+      <UniqueIdentifier>{75c2830e-ea9b-4f39-a9f0-30582628d811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{3f73a39c-59f6-4cb6-a0b8-d251275c643c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Public">
+      <UniqueIdentifier>{6dcd4022-feb1-45d9-a4a5-3b9cee46ecd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Private">
+      <UniqueIdentifier>{9e4c503e-26a9-484b-be5c-d94f35576fc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Private\COG">
+      <UniqueIdentifier>{5b0d89a7-da21-4400-83ab-54870554a551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Private\GOSystem">
+      <UniqueIdentifier>{23e2f1a7-adb3-4f1e-a184-91d884840c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Private\Gameplay">
+      <UniqueIdentifier>{6d84e38c-baf5-4b82-937c-97d302dc7610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Private\GameStates">
+      <UniqueIdentifier>{3e2b6e8a-1819-4c7c-8c9a-ccedea9cc349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Private\Helpers">
+      <UniqueIdentifier>{4b596354-6d3c-4b15-9a0f-9fe71d9b1221}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Public\EngineInterface.h">
+      <Filter>Source Files\Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\EngineTypes.h">
+      <Filter>Source Files\Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\GameInterface.h">
+      <Filter>Source Files\Game\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Public\SDL.h">
+      <Filter>Source Files\Engine\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Public\InputManager.h">
+      <Filter>Source Files\Game\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGPhysics.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGPlasma.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGPlayer.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGTurret.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Helpers\Collision.h">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Helpers\GraphicsHelpers.h">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Gameplay\Game.h">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Gameplay\World.h">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GOSystem\Component.h">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GOSystem\ComponentTypes.h">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GOSystem\GameObject.h">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GOSystem\GameObjectHandles.h">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GOSystem\GameObjectInventory.h">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GOSystem\HashMap.h">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Helpers\Physics.h">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGTransform.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGShape.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Gameplay\EnemyFactory.h">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Gameplay\EnemySpawner.h">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGWall.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Gameplay\EventTypes.h">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGDrawHealth.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Helpers\GraphicsLayers.h">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGZergling.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Helpers\tdcArray.h">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GameStates\FSM.h">
+      <Filter>Source Files\Game\Private\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\GameStates\FSMTurret.h">
+      <Filter>Source Files\Game\Private\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\Gameplay\GameplayEventsSystem.h">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGExplosion.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGGrenade.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Private\COG\COGDrawTurretState.h">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Private\Main.cpp">
+      <Filter>Source Files\Game\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGPhysics.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGPlasma.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGPlayer.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGTurret.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Helpers\Collision.cpp">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Helpers\GraphicsHelpers.cpp">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Helpers\InputManager.cpp">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Gameplay\Game.cpp">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Gameplay\World.cpp">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GameStates\Levels.cpp">
+      <Filter>Source Files\Game\Private\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GameStates\Menus.cpp">
+      <Filter>Source Files\Game\Private\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GOSystem\Component.cpp">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GOSystem\GameObject.cpp">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GOSystem\GameObjectHandles.cpp">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Helpers\Physics.cpp">
+      <Filter>Source Files\Game\Private\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGShape.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Gameplay\EnemyFactory.cpp">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Gameplay\EnemySpawner.cpp">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGWall.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGDrawHealth.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGZergling.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GOSystem\GameObjectInventory.cpp">
+      <Filter>Source Files\Game\Private\GOSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GameStates\FSM.cpp">
+      <Filter>Source Files\Game\Private\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\GameStates\FSMTurret.cpp">
+      <Filter>Source Files\Game\Private\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\Gameplay\GameplayEventsSystem.cpp">
+      <Filter>Source Files\Game\Private\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGExplosion.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGGrenade.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Private\COG\COGDrawTurretState.cpp">
+      <Filter>Source Files\Game\Private\COG</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7038AAA5-E614-4415-B06F-79F541386FDB}</ProjectGuid>
+    <RootNamespace>GameEngineX</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>OutGame\</OutDir>
+    <IntDir>OutGame\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Build\</OutDir>
+    <IntDir>OutGame\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Build\</OutDir>
+    <IntDir>OutGame\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/3rdParty/SDL;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Out\;3rdParty/SDL/SDL2-2.0.3/lib/x86;3rdParty/SDL/SDL2_gfx-1.0.1/lib;3rdParty/SDL/SDL2_ttf-2.0.12/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Winmm.lib;EngineXd.lib;SDL2.lib;SDL2-gfx.lib;SDL2-ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:MSVCRT %(AdditionalOptions)</AdditionalOptions>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;Winmm.lib;EngineX.lib;SDL2.lib;SDL2-gfx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)/3rdParty/SDL;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>Out\;3rdParty/SDL/SDL2-2.0.3/lib/x86;3rdParty/SDL/SDL2_gfx-1.0.1/lib;3rdParty/SDL/SDL2_ttf-2.0.12/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;EngineX.lib;SDL2.lib;SDL2-gfx.lib;SDL2-ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Public\EngineInterface.h" />
+    <ClInclude Include="Engine\Public\EngineTypes.h" />
+    <ClInclude Include="Engine\Public\SDL.h" />
+    <ClInclude Include="Game\Private\COG\COGDrawHealth.h" />
+    <ClInclude Include="Game\Private\COG\COGDrawTurretState.h" />
+    <ClInclude Include="Game\Private\COG\COGExplosion.h" />
+    <ClInclude Include="Game\Private\COG\COGGrenade.h" />
+    <ClInclude Include="Game\Private\COG\COGPhysics.h" />
+    <ClInclude Include="Game\Private\COG\COGPlasma.h" />
+    <ClInclude Include="Game\Private\COG\COGPlayer.h" />
+    <ClInclude Include="Game\Private\COG\COGShape.h" />
+    <ClInclude Include="Game\Private\COG\COGTransform.h" />
+    <ClInclude Include="Game\Private\COG\COGTurret.h" />
+    <ClInclude Include="Game\Private\COG\COGWall.h" />
+    <ClInclude Include="Game\Private\COG\COGZergling.h" />
+    <ClInclude Include="Game\Private\Gameplay\EnemyFactory.h" />
+    <ClInclude Include="Game\Private\Gameplay\EnemySpawner.h" />
+    <ClInclude Include="Game\Private\Gameplay\EventTypes.h" />
+    <ClInclude Include="Game\Private\Gameplay\Game.h" />
+    <ClInclude Include="Game\Private\Gameplay\GameplayEventsSystem.h" />
+    <ClInclude Include="Game\Private\Gameplay\World.h" />
+    <ClInclude Include="Game\Private\GameStates\FSM.h" />
+    <ClInclude Include="Game\Private\GameStates\FSMTurret.h" />
+    <ClInclude Include="Game\Private\GOSystem\Component.h" />
+    <ClInclude Include="Game\Private\GOSystem\ComponentTypes.h" />
+    <ClInclude Include="Game\Private\GOSystem\GameObject.h" />
+    <ClInclude Include="Game\Private\GOSystem\GameObjectHandles.h" />
+    <ClInclude Include="Game\Private\GOSystem\GameObjectInventory.h" />
+    <ClInclude Include="Game\Private\GOSystem\HashMap.h" />
+    <ClInclude Include="Game\Private\Helpers\Collision.h" />
+    <ClInclude Include="Game\Private\Helpers\GraphicsHelpers.h" />
+    <ClInclude Include="Game\Private\Helpers\GraphicsLayers.h" />
+    <ClInclude Include="Game\Private\Helpers\Physics.h" />
+    <ClInclude Include="Game\Private\Helpers\tdcArray.h" />
+    <ClInclude Include="Game\Public\GameInterface.h" />
+    <ClInclude Include="Game\Public\InputManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Private\COG\COGDrawHealth.cpp" />
+    <ClCompile Include="Game\Private\COG\COGDrawTurretState.cpp" />
+    <ClCompile Include="Game\Private\COG\COGExplosion.cpp" />
+    <ClCompile Include="Game\Private\COG\COGGrenade.cpp" />
+    <ClCompile Include="Game\Private\COG\COGPhysics.cpp" />
+    <ClCompile Include="Game\Private\COG\COGPlasma.cpp" />
+    <ClCompile Include="Game\Private\COG\COGPlayer.cpp" />
+    <ClCompile Include="Game\Private\COG\COGShape.cpp" />
+    <ClCompile Include="Game\Private\COG\COGTurret.cpp" />
+    <ClCompile Include="Game\Private\COG\COGWall.cpp" />
+    <ClCompile Include="Game\Private\COG\COGZergling.cpp" />
+    <ClCompile Include="Game\Private\Gameplay\EnemyFactory.cpp" />
+    <ClCompile Include="Game\Private\Gameplay\EnemySpawner.cpp" />
+    <ClCompile Include="Game\Private\Gameplay\Game.cpp" />
+    <ClCompile Include="Game\Private\Gameplay\GameplayEventsSystem.cpp" />
+    <ClCompile Include="Game\Private\Gameplay\World.cpp" />
+    <ClCompile Include="Game\Private\GameStates\FSM.cpp" />
+    <ClCompile Include="Game\Private\GameStates\FSMTurret.cpp" />
+    <ClCompile Include="Game\Private\GameStates\Levels.cpp" />
+    <ClCompile Include="Game\Private\GameStates\Menus.cpp" />
+    <ClCompile Include="Game\Private\GOSystem\Component.cpp" />
+    <ClCompile Include="Game\Private\GOSystem\GameObject.cpp" />
+    <ClCompile Include="Game\Private\GOSystem\GameObjectHandles.cpp" />
+    <ClCompile Include="Game\Private\GOSystem\GameObjectInventory.cpp" />
+    <ClCompile Include="Game\Private\Helpers\Collision.cpp" />
+    <ClCompile Include="Game\Private\Helpers\GraphicsHelpers.cpp" />
+    <ClCompile Include="Game\Private\Helpers\InputManager.cpp" />
+    <ClCompile Include="Game\Private\Helpers\Physics.cpp" />
+    <ClCompile Include="Game\Private\Main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
